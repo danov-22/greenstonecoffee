@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenstones — Brew Hub</title>
+  <meta name="description" content="Greenstones — Brew with Passion and Enthusiasm. Specialty coffee in Surabaya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#home" class="navbar__logo">Greenstones</a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+        <ul class="navbar__list">
+          <li><a href="#about"        class="navbar__link">The Craft</a></li>
+          <li><a href="#menu"         class="navbar__link">Menu</a></li>
+          <li><a href="#testimonials" class="navbar__link">Reviews</a></li>
+          <li><a href="#contact"      class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a
+        href="https://wa.me/1234567890"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--primary navbar__cta"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow fade-up">Est. 2024 &nbsp;·&nbsp; Specialty Coffee</p>
+      <h1 class="hero__title fade-up delay-1">
+        Green<span class="accent">stones</span>
+      </h1>
+      <p class="hero__tagline fade-up delay-2"><em>Brew with Passion and Enthusiasm</em></p>
+      <div class="hero__actions fade-up delay-3">
+        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
+        <a href="#about" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__image-wrap fade-left">
+        <div class="about__image-bg"></div>
+        <div class="about__image-frame">
+          <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="coffeeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0c1f12"/>
+                <stop offset="100%" style="stop-color:#080b08"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="500" fill="url(#coffeeGrad)"/>
+            <!-- Cup body -->
+            <path d="M130 220 L150 360 Q200 380 250 360 L270 220 Z" fill="#163a20" opacity="0.9"/>
+            <!-- Cup rim -->
+            <ellipse cx="200" cy="220" rx="70" ry="18" fill="#1d4a2a"/>
+            <!-- Saucer -->
+            <ellipse cx="200" cy="375" rx="90" ry="20" fill="#163020"/>
+            <!-- Steam lines -->
+            <path d="M175 190 Q180 165 175 145" stroke="#3dd9c4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7">
+              <animate attributeName="d" values="M175 190 Q180 165 175 145;M175 190 Q170 165 175 145;M175 190 Q180 165 175 145" dur="3s" repeatCount="indefinite"/>
+            </path>
+            <path d="M200 185 Q205 160 200 140" stroke="#3dd9c4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7">
+              <animate attributeName="d" values="M200 185 Q205 160 200 140;M200 185 Q195 160 200 140;M200 185 Q205 160 200 140" dur="3.5s" repeatCount="indefinite"/>
+            </path>
+            <path d="M225 190 Q220 165 225 145" stroke="#3dd9c4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7">
+              <animate attributeName="d" values="M225 190 Q220 165 225 145;M225 190 Q230 165 225 145;M225 190 Q220 165 225 145" dur="2.8s" repeatCount="indefinite"/>
+            </path>
+            <!-- Coffee surface -->
+            <ellipse cx="200" cy="220" rx="62" ry="14" fill="#0d1f10"/>
+            <!-- Latte art -->
+            <path d="M175 218 Q200 210 225 218 Q200 230 175 218" fill="#3dd9c4" opacity="0.35"/>
+            <!-- Handle -->
+            <path d="M270 255 Q310 255 310 290 Q310 325 270 325" stroke="#1d4a2a" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <!-- Beans -->
+            <ellipse cx="90" cy="140" rx="22" ry="14" fill="#163a20" transform="rotate(-30 90 140)"/>
+            <path d="M90 128 Q88 140 90 152" stroke="#0d1f10" stroke-width="2.5" fill="none"/>
+            <ellipse cx="320" cy="390" rx="20" ry="13" fill="#163a20" transform="rotate(20 320 390)"/>
+            <path d="M320 378 Q318 390 320 402" stroke="#0d1f10" stroke-width="2.5" fill="none"/>
+            <ellipse cx="70" cy="390" rx="18" ry="11" fill="#163a20" transform="rotate(-15 70 390)"/>
+            <path d="M70 380 Q68 390 70 400" stroke="#0d1f10" stroke-width="2.5" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="about__text fade-right">
+        <p class="section__label">Our Story</p>
+        <h2 class="section__title">Rooted in the Art of the Perfect Cup</h2>
+        <p class="about__body">
+          Greenstones was born from a simple belief — that coffee is more than a morning habit.
+          It's a ritual, a pause, a conversation starter. Since 2024, we've been sourcing
+          single-origin beans from small farms across Ethiopia, Colombia, and Indonesia,
+          roasting in small batches to bring out every note.
+        </p>
+        <p class="about__body">
+          Our baristas aren't just staff — they're craftspeople who care deeply about
+          temperature, grind size, and timing. Every shot pulled, every milk steamed,
+          every cup placed on the counter is the result of that care.
+        </p>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-number">12+</span>
+            <span class="about__stat-label">Origin Countries</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">1+</span>
+            <span class="about__stat-label">Year Brewing</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">10k+</span>
+            <span class="about__stat-label">Cups Served</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__label">What We Brew</p>
+        <h2 class="section__title">The Menu</h2>
+        <p class="section__subtitle">
+          Crafted from beans sourced at origin, roasted in-house, and brewed to order.
+        </p>
+      </div>
+
+      <div class="menu__tabs fade-up delay-1" role="tablist">
+        <button class="menu__tab active" data-category="espresso" role="tab" aria-selected="true">Espresso</button>
+        <button class="menu__tab" data-category="filter" role="tab" aria-selected="false">Filter</button>
+        <button class="menu__tab" data-category="seasonal" role="tab" aria-selected="false">Seasonal</button>
+        <button class="menu__tab" data-category="food" role="tab" aria-selected="false">Food</button>
+      </div>
+
+      <div class="menu__grid" id="menuGrid">
+
+        <!-- Espresso -->
+        <div class="menu__card fade-up" data-category="espresso">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><ellipse cx="150" cy="115" rx="55" ry="13" fill="#163a20"/><path d="M100 115 L108 160 Q150 172 192 160 L200 115 Z" fill="#1d4a2a"/><ellipse cx="150" cy="115" rx="48" ry="11" fill="#0d1f10"/><path d="M130 112 Q150 106 170 112 Q150 122 130 112" fill="#3dd9c4" opacity="0.4"/><path d="M140 97 Q143 83 140 72" stroke="#3dd9c4" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/><path d="M155 94 Q158 80 155 69" stroke="#3dd9c4" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/><path d="M200 130 Q225 130 225 148 Q225 166 200 166" stroke="#1d4a2a" stroke-width="9" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Espresso</h3>
+              <span class="menu__card-price">Rp 28k</span>
+            </div>
+            <p class="menu__card-desc">Double shot, 18g in — dark fruit, cocoa finish, bright acidity.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-1" data-category="espresso">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><ellipse cx="150" cy="110" rx="65" ry="15" fill="#163a20"/><path d="M90 110 L100 170 Q150 185 200 170 L210 110 Z" fill="#1d4a2a"/><ellipse cx="150" cy="110" rx="58" ry="13" fill="#2a5c34" opacity="0.8"/><path d="M115 108 Q150 98 185 108 Q150 120 115 108" fill="#fff" opacity="0.85"/><path d="M210 130 Q240 130 240 152 Q240 174 210 174" stroke="#1d4a2a" stroke-width="10" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Flat White</h3>
+              <span class="menu__card-price">Rp 38k</span>
+            </div>
+            <p class="menu__card-desc">Ristretto base, velvety microfoam — rich, smooth, and bold.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-2" data-category="espresso">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><rect x="80" y="90" width="140" height="90" rx="8" fill="#163a20"/><rect x="80" y="80" width="140" height="20" rx="4" fill="#1d4a2a"/><rect x="85" y="85" width="130" height="10" rx="3" fill="#0d1f10"/><rect x="80" y="165" width="140" height="12" rx="3" fill="#122e18"/><rect x="60" y="170" width="180" height="8" rx="4" fill="#163a20"/><path d="M95 120 Q150 110 205 120 Q150 140 95 120" fill="#fff" opacity="0.9"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Cappuccino</h3>
+              <span class="menu__card-price">Rp 35k</span>
+            </div>
+            <p class="menu__card-desc">Equal parts espresso, steamed milk, and foam — textbook perfection.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up" data-category="espresso">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><rect x="95" y="50" width="110" height="130" rx="10" fill="#0d1f10" opacity="0.9"/><rect x="85" y="45" width="130" height="18" rx="6" fill="#163a20"/><rect x="88" y="48" width="124" height="12" rx="4" fill="#0d1f10"/><rect x="95" y="175" width="110" height="8" rx="3" fill="#122e18"/><path d="M205 100 Q230 100 230 120 Q230 140 205 140" stroke="#163a20" stroke-width="10" fill="none" stroke-linecap="round"/><rect x="98" y="52" width="104" height="30" rx="3" fill="#2a5c34"/><path d="M98 52 L202 52 L202 82 Q150 90 98 82 Z" fill="#3dd9c4" opacity="0.35"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Cortado</h3>
+              <span class="menu__card-price">Rp 32k</span>
+            </div>
+            <p class="menu__card-desc">Espresso cut with equal warm milk — the specialist's choice.</p>
+          </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="menu__card fade-up" data-category="filter" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><path d="M120 60 L180 60 L165 140 Q150 150 135 140 Z" fill="#163a20"/><rect x="115" y="50" width="70" height="18" rx="4" fill="#1d4a2a"/><rect x="105" y="148" width="90" height="10" rx="5" fill="#1d4a2a"/><rect x="95" y="155" width="110" height="8" rx="4" fill="#163a20"/><path d="M148 60 L152 140" stroke="#0d1f10" stroke-width="1.5" fill="none"/><path d="M120 85 L180 85" stroke="#0d1f10" stroke-width="1.5" fill="none"/><path d="M118 105 L182 105" stroke="#0d1f10" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">V60 Pour Over</h3>
+              <span class="menu__card-price">Rp 45k</span>
+            </div>
+            <p class="menu__card-desc">Single-origin Ethiopian, 4-minute brew — floral, jasmine, stone fruit.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-1" data-category="filter" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><path d="M100 70 L200 70 L185 160 Q150 172 115 160 Z" fill="#163a20"/><rect x="92" y="60" width="116" height="18" rx="5" fill="#1d4a2a"/><ellipse cx="150" cy="72" rx="52" ry="12" fill="#0d1f10"/><path d="M200 100 Q230 100 230 125 Q230 150 200 150" stroke="#163a20" stroke-width="10" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Chemex Brew</h3>
+              <span class="menu__card-price">Rp 50k</span>
+            </div>
+            <p class="menu__card-desc">Clean, bright, and crisp — Colombia Huila, citrus and caramel notes.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-2" data-category="filter" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><rect x="100" y="60" width="100" height="120" rx="10" fill="#163a20"/><rect x="92" y="52" width="116" height="20" rx="8" fill="#1d4a2a"/><ellipse cx="150" cy="62" rx="55" ry="13" fill="#0d1f10"/><path d="M110 90 Q150 80 190 90 Q150 105 110 90" fill="#3dd9c4" opacity="0.25"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Cold Brew</h3>
+              <span class="menu__card-price">Rp 42k</span>
+            </div>
+            <p class="menu__card-desc">18-hour steep, served over ice — smooth, low-acid, naturally sweet.</p>
+          </div>
+        </div>
+
+        <!-- Seasonal -->
+        <div class="menu__card fade-up" data-category="seasonal" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><ellipse cx="150" cy="120" rx="65" ry="15" fill="#163a20"/><path d="M90 120 L100 175 Q150 188 200 175 L210 120 Z" fill="#1d4a2a"/><ellipse cx="150" cy="120" rx="58" ry="13" fill="#2a5c34" opacity="0.9"/><path d="M115 118 Q150 108 185 118 Q150 130 115 118" fill="#fff" opacity="0.7"/><path d="M125 105 Q130 90 128 78" stroke="#3dd9c4" stroke-width="2" fill="none" opacity="0.6"/><path d="M150 102 Q155 87 153 75" stroke="#3dd9c4" stroke-width="2" fill="none" opacity="0.6"/><path d="M175 105 Q170 90 172 78" stroke="#3dd9c4" stroke-width="2" fill="none" opacity="0.6"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Honey Oat Latte</h3>
+              <span class="menu__card-price">Rp 44k</span>
+            </div>
+            <p class="menu__card-desc">Espresso, oat milk, raw wildflower honey, pinch of sea salt.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-1" data-category="seasonal" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><rect x="95" y="60" width="110" height="120" rx="10" fill="#163a20"/><rect x="85" y="52" width="130" height="20" rx="7" fill="#1d4a2a"/><rect x="88" y="55" width="124" height="12" rx="4" fill="#163a20"/><path d="M205 95 Q235 95 235 118 Q235 141 205 141" stroke="#1d4a2a" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M105 90 Q150 78 195 90 Q195 110 150 118 Q105 110 105 90Z" fill="#25c26e" opacity="0.5"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Spiced Maple Mocha</h3>
+              <span class="menu__card-price">Rp 48k</span>
+            </div>
+            <p class="menu__card-desc">Dark chocolate, espresso, maple syrup, cinnamon, cardamom.</p>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="menu__card fade-up" data-category="food" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><ellipse cx="150" cy="145" rx="80" ry="22" fill="#163a20" opacity="0.5"/><ellipse cx="150" cy="130" rx="75" ry="35" fill="#1d4a2a"/><ellipse cx="150" cy="125" rx="72" ry="30" fill="#2a5c34"/><ellipse cx="150" cy="120" rx="68" ry="25" fill="#3a7a46"/><path d="M100 118 Q130 108 150 112 Q170 108 200 118" stroke="#163a20" stroke-width="3" fill="none"/><ellipse cx="130" cy="105" rx="20" ry="12" fill="#163a20" opacity="0.6"/><ellipse cx="165" cy="102" rx="18" ry="11" fill="#163a20" opacity="0.6"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Banana Walnut Bread</h3>
+              <span class="menu__card-price">Rp 36k</span>
+            </div>
+            <p class="menu__card-desc">House-baked daily — soft, dense, lightly spiced. Best warm.</p>
+          </div>
+        </div>
+
+        <div class="menu__card fade-up delay-1" data-category="food" style="display:none">
+          <div class="menu__card-img">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#080b08"/><ellipse cx="150" cy="130" rx="85" ry="40" fill="#2a5c34" opacity="0.9"/><ellipse cx="150" cy="122" rx="80" ry="35" fill="#3a7a46"/><path d="M80 122 Q90 80 150 75 Q210 80 220 122" fill="#4a9458"/><path d="M85 122 Q100 100 150 97 Q200 100 215 122" stroke="#2a5c34" stroke-width="2" fill="none" opacity="0.5"/><ellipse cx="150" cy="122" rx="76" ry="30" fill="none" stroke="#1d4a2a" stroke-width="1.5" opacity="0.4"/></svg>
+          </div>
+          <div class="menu__card-body">
+            <div class="menu__card-header">
+              <h3 class="menu__card-name">Butter Croissant</h3>
+              <span class="menu__card-price">Rp 30k</span>
+            </div>
+            <p class="menu__card-desc">Flaky, laminated, golden — baked fresh every morning by 7am.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__label">What Guests Say</p>
+        <h2 class="section__title">Reviews</h2>
+      </div>
+
+      <div class="testimonials__track" id="testimonialTrack">
+
+        <article class="testimonial__card">
+          <div class="testimonial__stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            "The flat white here is genuinely the best I've had in Surabaya. The bean they're using is extraordinary — rich, thick, no bitterness. I've stopped going anywhere else."
+          </blockquote>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar">JM</div>
+            <div>
+              <strong>James M.</strong>
+              <span>Regular since 2024</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial__card">
+          <div class="testimonial__stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            "Came in for the V60, stayed for two hours because the atmosphere is just so good. Quiet, warm, and the barista actually talked me through the origin of the bean. This is how coffee should be."
+          </blockquote>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar">SA</div>
+            <div>
+              <strong>Sofia A.</strong>
+              <span>Coffee enthusiast</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial__card">
+          <div class="testimonial__stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            "The Honey Oat Latte is something else. I brought three friends on the weekend and every single one of them ordered a second. The banana bread is also dangerously good."
+          </blockquote>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar">RK</div>
+            <div>
+              <strong>Reza K.</strong>
+              <span>Weekend regular</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial__card">
+          <div class="testimonial__stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="testimonial__quote">
+            "I work remotely and this has become my office. Great music, and the staff make you feel welcome whether you're staying an hour or four. Consistent quality every single time."
+          </blockquote>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar">LC</div>
+            <div>
+              <strong>Laura C.</strong>
+              <span>Remote worker</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="testimonials__controls" aria-label="Testimonial navigation">
+        <button class="testimonials__btn" id="prevBtn" aria-label="Previous review">&#8592;</button>
+        <div class="testimonials__dots" id="testimonialDots"></div>
+        <button class="testimonials__btn" id="nextBtn" aria-label="Next review">&#8594;</button>
+      </div>
+
+      <div class="testimonials__google fade-up">
+        <p class="testimonials__google-note">
+          Want to read our latest reviews? We're on Google Maps.
+        </p>
+        <a
+          href="https://maps.app.goo.gl/EamppwrTzWwUS89Z8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="testimonials__google-btn"
+          aria-label="Read Greenstones reviews on Google Maps"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Read Our Google Reviews
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__centered fade-up">
+        <p class="section__label">Find Us</p>
+        <h2 class="section__title">Visit &amp; Connect</h2>
+        <p class="contact__desc">
+          Come in, slow down, and let us make you something great.
+          Reach us directly on WhatsApp — we reply quickly.
+        </p>
+
+        <ul class="contact__details">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Address</strong>
+              <a
+                href="https://maps.app.goo.gl/EamppwrTzWwUS89Z8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Jalan Embong Tanjung No. 33, Surabaya</a>
+            </div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon – Fri: 10:00 AM – 12:00 PM</span>
+              <span>Sat – Sun: 10:00 AM – 12:00 PM</span>
+            </div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Chat with us directly</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__actions">
+          <a
+            href="https://wa.me/1234567890?text=Hi%20Greenstones!%20I'd%20like%20to%20get%20in%20touch."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a
+            href="https://maps.app.goo.gl/EamppwrTzWwUS89Z8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--ghost"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">Greenstones</a>
+        <p class="footer__tagline"><em>Brew with Passion and Enthusiasm</em></p>
+        <div class="footer__social">
+          <a
+            href="https://www.instagram.com/greenstones.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a
+            href="https://maps.app.goo.gl/EamppwrTzWwUS89Z8"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Maps"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 10am – 12pm</li>
+            <li>Saturday: 10am – 12pm</li>
+            <li>Sunday: 10am – 12pm</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Greenstones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a
+    href="https://wa.me/1234567890?text=Hi%20Greenstones!"
+    class="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
