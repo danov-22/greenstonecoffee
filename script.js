@@ -109,7 +109,7 @@
 
   /* Make initial cards visible */
   cards.forEach(function (card) {
-    if (card.getAttribute('data-category') === 'espresso') {
+    if (card.getAttribute('data-category') === 'drinks') {
       card.style.display = '';
     }
   });
