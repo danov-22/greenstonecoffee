@@ -503,38 +503,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   background: var(--surface);
 }
-.menu__card-img svg {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease;
-}
-.menu__card:hover .menu__card-img svg { transform: scale(1.04); }
-
-.menu__card-body { padding: 1.25rem; }
-
-.menu__card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-.menu__card-name {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--text);
-}
-.menu__card-price {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--teal);
-  white-space: nowrap;
-}
-.menu__card-desc {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.55;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ── Testimonials ───────────────────────────────────────── */
